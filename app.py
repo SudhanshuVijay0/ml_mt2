@@ -49,16 +49,16 @@ def main():
    </div>
    """
     st.markdown(html_temp,unsafe_allow_html=True)
-    st.header("Prediction for voice sample")
-    meanfreq = st.number_input('Insert meanfreq ')
-    sd = st.number_input('Inset sd')
-    median = st.number_input('Inset median')
-    IQR = st.number_input('Inset IQR')
-    skew = st.number_input('Inset skew')
-    kurt = st.number_input('Inset kurt')
-    mode = st.number_input('Inset mode')
-    centroid = st.number_input('Insert centroid')
-    dfrange = st.number_input('Insert dfrange')
+    st.header("Prediction for voice sample",0.0000000,30.00000000)
+    meanfreq = st.number_input('Insert meanfreq ',0.0000000,30.00000000)
+    sd = st.number_input('Inset sd',0.0000000,30.00000000)
+    median = st.number_input('Inset median',0.0000000,30.00000000)
+    IQR = st.number_input('Inset IQR',0.0000000,30.00000000)
+    skew = st.number_input('Inset skew',0.0000000,30.00000000)
+    kurt = st.number_input('Inset kurt',0.0000000,30.00000000)
+    mode = st.number_input('Inset mode',0.0000000,30.00000000)
+    centroid = st.number_input('Insert centroid',0.0000000,30.00000000)
+    dfrange = st.number_input('Insert dfrange',0.0000000,30.00000000)
     
     result=""
     if st.button("Predict"):
