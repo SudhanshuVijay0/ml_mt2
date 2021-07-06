@@ -49,7 +49,7 @@ def main():
    </div>
    """
     st.markdown(html_temp,unsafe_allow_html=True)
-    st.header("Prediction for voice sample",0.0000000,30.00000000)
+    st.header("Prediction for voice sample")
     meanfreq = st.number_input('Insert meanfreq ',0.0000000,30.00000000)
     sd = st.number_input('Inset sd',0.0000000,30.00000000)
     median = st.number_input('Inset median',0.0000000,30.00000000)
