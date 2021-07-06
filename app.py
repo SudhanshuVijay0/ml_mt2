@@ -21,6 +21,9 @@ imputer = imputer.fit(X[:, 1:8])
 #Replacing missing data with the calculated mean value  
 X[:, 1:8]= imputer.transform(X[:, 1:8])  
 
+from sklearn.preprocessing import StandardScaler
+sc = StandardScaler()
+X = sc.fit_transform(X)
 
 def predict_note_authentication(meanfreq, sd, median, IQR, skew, kurt, mode, centroid, dfrange):
   output= model.predict(sc.transform([[meanfreq, sd, median, IQR, skew, kurt, mode, centroid, dfrange]]))
